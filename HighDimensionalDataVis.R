@@ -12,8 +12,6 @@ mtcars <- mutate(mtcars,am=factor(am,ordered=TRUE,levels=c(0,1)))
 # 2 elements
 ## weight, mpg
 ggplot(mtcars,aes(x=wt,y=mpg)) + geom_point() + theme_bw() + labs(x="Weight", y="Miles per Gallon")
-## cyl, count
-ggplot(mtcars,aes(x=cyl)) + geom_bar() + theme_bw() + labs(x="# of Cylinders", y="Count")
 
 # 3 elements
 ## weight, mpg, cyl
